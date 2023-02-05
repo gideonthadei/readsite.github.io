@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: aqua;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+  padding-top: 80px;
+  padding-left: 70px;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover{
+  background-color: aqua;
+  color: black;
+}
+
+.previous{
+  background-color: #04AA6D;
+  color: white;
+  width: 90px;
+  height: 40px;
+}
+
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: center;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  padding-left: 100px;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="year1.html" class="previous">&laquo;<b>Back</b></a>
+  <h2 style="padding-left:500px ;"><b>Books</b></h2>
+</div>
+
+<div class="main">
+
+  
+  <form class="example" action="/action_page.php">
+    <input type="text" placeholder="Search books.." name="search">
+    <!-- <button type="submit" style="padding-left: 100px;"><i class="fa fa-search"></i></button> -->
+  </form>
+
+  <img src="cs1.jpg.webp"style="width:400px ; height:400px; padding-top: 60px; " >
+  <img src="cs2.jpg.crdownload" style="width:400px ; height:400px;">
+  <img src="cs1.jpg.webp"style="width:400px ; height:400px; padding-top: 60px; " >
+</div>
+
+</body>
+</html>

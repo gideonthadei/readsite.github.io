@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: aqua;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  padding-top: 50px;
+;  height: 1500px; /* Used in this example to enable scrolling */
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover{
+  background-color: aqua;
+  color: black;
+}
+
+.previous{
+  background-color: #04AA6D;
+  color: white;
+  width: 90px;
+  height: 40px;
+}
+
+/* trice */
+
+
+.about-section {
+  padding: 0px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+height:  525px;
+}
+
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="year1.html" class="previous">&laquo;<b>Back</b></a>
+  <h2 style="padding-left:500px ;"><b>About Us</b></h2>
+</div>
+
+<div class="main">
+ 
+
+  <div class="about-section">
+    <br>
+    <br>
+    <h1>ABOUT US PAGE</h1>
+        <p>We are all about sharpening your mind and taking you to higher intellectual step by kindly giving you access
+      to all requirements needed for learning.</p>
+  <br>
+  <br>
+  
+   <h2>WHAT WE ARE PROVIDING</h2>
+   <p id="demo"></p>
+  
+   <script>
+   const requirements = ["Courses", "Online teachings", "Library", "Books", "Tests", "Notes"];
+  
+   let text = "";
+   for (let i = 0; i < requirements.length; i++) {
+     text += requirements[i] + "<br>";
+   }
+   
+   document.getElementById("demo").innerHTML = text;
+   </script>
+  
+    <script>
+      console.error("you made a mistake");
+    </script>
+
+  <br>
+  <br>
+  <h3>YOU ARE WARMLY WELCOMED</h3>
+  
+  </div>
+
+</div>
+
+</body>
+</html>

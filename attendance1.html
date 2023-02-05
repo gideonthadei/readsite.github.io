@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: aqua;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 35px;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover{
+  background-color: aqua;
+  color: black;
+}
+
+.previous{
+  background-color: #04AA6D;
+  color: #ffffff;
+  width: 90px;
+  height: 40px;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 500px;
+  height:50px ;
+  
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 570px;
+  height:50px ;
+  
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  
+  /* width: 500px;
+  height: 50px;
+  padding-left: 400px; */
+}
+
+.table{
+  padding-left: 240px;
+}
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  width: 1000px;
+  height: 100px;
+ 
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+.form1{
+  padding-left: 700px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="year1.html" class="previous">&laquo;<b>Back</b></a>
+  <h2 style="padding-left:500px ;"><b>Attendance</b></h2>
+</div>
+
+ <div class="main">  
+
+ 
+
+  <div>
+
+    <h3 style="padding-left: 400px;"> Attendance registration form</h3>
+    <form action="/action_page.php" style="padding-left: 400px;">
+      <label for="fname" >First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    </br>
+      <label for="lname" >Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    </br>
+    
+    
+      <input type="submit" value="Submit" >
+    </form>
+  </div>
+
+
+  <div class="table">
+  <table id="customers">
+    <tr>
+      <th>Full Name</th>
+      <th>Registration No</th>
+      <th>Course</th>
+    </tr>
+    <tr>
+      <td>Alfreds Futterkiste</td>
+      <td>BCS/12345/2101/DT</td>
+      <td>BCS</td>
+    </tr>
+    <tr>
+      <td>Berglunds snabbköp</td>
+      <td>BCS/12345/2101/DT</td>
+      <td>BCS</td>
+    </tr>
+    <tr>
+      <td>Centro comercial Moctezuma</td>
+      <td>BCS/12345/2101/DT</td>
+      <td>BCS</td>
+    </tr>
+    <tr>
+      <td>Ernst Handel</td>
+      <td>BCS/12345/2101/DT</td>
+      <td>BCS</td>
+    </tr>
+    <tr>
+      <td>Island Trading</td>
+      <td>BCS/12345/2101/DT</td>
+      <td>BCS</td>
+    </tr>
+    <tr>
+      <td>Königlich Essen</td>
+      <td>BCS/12345/2101/DT</td>
+      <td>BCS</td>
+    </tr>
+    <tr>
+      <td>Laughing Bacchus Winecellars</td>
+      <td>BCS/12345/2101/DT</td>
+      <td>BCS</td>
+    </tr>
+    <tr>
+      <td>Magazzini Alimentari Riuniti</td>
+      <td>BCS/12345/2101/DT</td>
+      <td>BCS</td>
+    </tr>
+    <tr>
+      <td>North/South</td>
+      <td>BCS/12345/2101/DT</td>
+      <td>BCS</td>
+    </tr>
+    <tr>
+      <td>Paris spécialités</td>
+      <td>BCS/12345/2101/DT</td>
+      <td>BCS</td>
+    </tr>
+  </table>
+</div>
+
+<div class="form1">
+<h2>Opinions</h2>
+
+<p>how was a session:</p>
+
+<form>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">Excellent</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">Good</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">Normal</label><br>
+    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">Bad</label>
+</form> 
+
+ </div> 
+
+</body>
+</html>

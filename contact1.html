@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: aqua;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover{
+  background-color: aqua;
+  color: black;
+}
+
+.previous{
+  background-color: #04AA6D;
+  color: white;
+  width: 90px;
+  height: 40px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="year1.html" class="previous">&laquo;<b>Back</b></a>
+  <h2 style="padding-left:500px ;"><b>Contacts</b></h2>
+</div>
+
+<div class="main">
+ 
+
+
+  <!DOCTYPE html>
+<html>
+<body>
+
+<h2>CONTACT US</h2>
+
+<p>Our Main Address;</p>
+
+<p id="demo"></p>
+
+<script>
+cons;t fruits = ["Gongo la mboto, Dar es salaam, Tanzania<br>P.O.Box 9790.", "Phone<br>+255764730547<br>+255652455516<br>+255784461327", "Email<br>Elearning@gmail.com",];
+
+let text = "<ul>";
+fruits.forEach(myFunction);
+text += "</ul>";
+document.getElementById("demo").innerHTML = text;
+
+function myFunction(value) {
+  text += "<li>" + value + "</li>";
+} 
+</script>
+
+</body>
+</html>
+
+</div>
+
+</body>
+</html>
